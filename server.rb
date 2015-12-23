@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'HTTParty'
 
 configure do
 	enable :sessions
