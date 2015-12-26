@@ -1,6 +1,3 @@
-/* WEB FONT */
-@import url(http://fonts.googleapis.com/css?family=Signika:600|Varela+Round);
-
 /* RESET */
 * {
   margin: 0;
@@ -11,11 +8,10 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
-  font: normal 18px/22px "Varela Round", sans-serif;
   color: #2e2e2e;
+  font-family: 'Cantarell', sans-serif;
 }
 h1, h2 {
-  font-family: "Signika", sans-serif;
   font-weight: 600;
 }
 h1 {
@@ -83,8 +79,7 @@ a:link, a:visited, a:hover, a:active {
   background-color: rgba(70, 70, 70, 0.9);
 }
 .slideContent{
-  width: 95%;
-  margin-left: 30px;
+  width: 71%;
 }
 .slideContent img {
   height: 225px;
