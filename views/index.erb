@@ -6,20 +6,57 @@
 		<meta name="description">
 		<link rel="stylesheet" href="/stylesheets/base.css">
 		<link rel="stylesheet" href="/stylesheets/style.css">
+		<link rel="stylesheet" href="slick/slick/slick.css"/>
+		<link rel="stylesheet" href="slick/slick/slick-theme.css"/>
+		<script type="text/javascript" src="lightbox/lightbox.js"></script>
 	</head>
 	<body>
 		<nav class="fixed-nav-bar">
 			<div id="menu" class="menu">
+				<a class="sitename" href="fixed-navigation-bar.html">TBD</a>
+				<!-- Example responsive navigation menu  -->
+				<a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+				<ul class="menu-items">
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="projects.html">View Projects</a></li>
+				</ul>
 			</div>
 		</nav>
 		<section class="content">
 			<div class="description">
-				<h1>Theodora Boyadjis Designs</h1>
-				<h1>Coming Soon</h1>
+				<h1>Theodora Boyadjis Design</h1>
 				<h2 class="summary">Registered Architect</h2>
 				<h2 class="summary">Leed Accredited Professional</h2>
-			</div>			
-		</section>
+			</div>
+			<h2 class="project-category">Pahos, Cyprus</h2>
+			<div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}' class="slideContent">
+			  <div>
+			  	<a href="images/Pahos_Exterior.jpg" rel="lightbox">
+				  	<img src="images/Pahos_Exterior.jpg">
+				  	<img src="close.gif" id="closeButton" style="position: absolute; z-index: 200;">
+				</a>
+			  </div>
+			  <div>
+			  	<a href="images/Pahos_Exterior2.jpg" rel="lightbox">
+				  	<img src="images/Pahos_Exterior2.jpg">
+				  	<img src="close.gif" id="closeButton" style="position: absolute; z-index: 200;">
+					</a>
+			  </div>
+			  <div>
+			  	<a href="images/Pahos_Exterior3" rel="lightbox">
+				  	<img src="images/Pahos_Exterior3.jpg">
+				  	<img src="close.gif" id="closeButton" style="position: absolute; z-index: 200;">
+				  </a>
+			  </div>
+			  <div>
+			  	<a href="images/Pahos_Interior.jpg" rel="lightbox">
+				  	<img src="images/Pahos_Interior.jpg">
+				  	<img src="close.gif" id="closeButton" style="position: absolute; z-index: 200;">
+				  </a>
+			  </div>
+			</div>
 		<section>
 			<div class="footer">
 				<ul>
@@ -33,5 +70,14 @@
 				<p class="copyright">&copy; TBD 2015</p>
 			</div>
 		</section>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $('.slideContent').slick({
+			  });
+			});
+		</script>
 	</body>
 </html>
