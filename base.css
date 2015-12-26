@@ -1,0 +1,94 @@
+/* WEB FONT */
+@import url(https://fonts.googleapis.com/css?family=Cantarell);
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* BASIC */
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font: normal 18px/22px "Varela Round", sans-serif;
+  color: #2e2e2e;
+}
+h1, h2 {
+  font-weight: 600;
+}
+h1 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+}
+h2 {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: -20px;
+}
+p {
+  margin: 20px 0;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* LAYOUT */
+.fixed-nav-bar {
+  box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.6);
+}
+.content {
+  position: relative;
+}
+.description {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* SPECIAL */
+.summary {
+  color: #000000;
+  margin-top: 27px;
+}
+.button, .button:visited, .button-dark {
+  display: inline-block;
+  max-width: 200px;
+  margin: 50px 10px 30px 10px;
+  padding: 10px;
+  font-family: "Signika", sans-serif;
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 0.1s ease;
+}
+.button-dark, .button-dark:visited {
+  margin: 20px 10px 30px 0;
+  color: #464646;
+  border-color: #464646;
+
+}
+.button:hover, .button-dark:hover {
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.button-dark:hover {
+  color: #000000;
+  background-color: rgba(70, 70, 70, 0.9);
+}
+.slideContent{
+  width: 95%;
+  margin-left: 30px;
+}
+.slideContent img {
+  height: 225px;
+}
+.project-category {
+  margin-left:30px;
+  margin-bottom: 10px;
+}
