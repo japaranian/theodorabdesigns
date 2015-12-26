@@ -137,6 +137,8 @@ div#lightbox {
   margin-left:31px;
   width:249px;
   text-align: justify;
+  position:relative;
+  top:30px;
 }
 .projectDescription p {
   margin: 0px 0;
