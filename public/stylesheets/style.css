@@ -124,32 +124,22 @@ a.sitename, a:visited.sitename {
   top: 63%;
   left:44%;
 }
-#lightboxImage {
-  width: 50%;
-  position: relative;
-  top: 109px;
-  left: 83px;
-}
-div#lightbox {
-  top: 109px;
+.projectRow {
+  width:100%;
+  clear:both;
 }
 .projectDescription {
-  margin-left:31px;
-  width:249px;
-  text-align: justify;
-  position:relative;
-  top:30px;
+  float:left;
+  width:16%;
+  margin-left:15px;
 }
-.projectDescription p {
-  margin: 0px 0;
+.projectSlider {
+  position: relative;
+  right: 46px;
+  width: 75%;
+  float: right;
 }
-div.slideContent.slick-initialized.slick-slider {
-  position:relative;
-  float:right;
-  right:39px;
-  bottom:152px;
-}
-.slick-list.draggable {
-  position:relative;
-  left:1px;
+.projectSlider img {
+  height:220px;
+  margin-right:2px;
 }
