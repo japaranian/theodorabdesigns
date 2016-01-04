@@ -25,10 +25,7 @@
   max-width: 960px;
   margin: 0 auto;
 }
-.menu a, .menu a:visited {
-  color: #ffffff;
-}
-.menu a:hover, .menu a:target {
+.menu a, .menu a:hover, .menu a:target {
   color: #ebebeb;
 }
 .menu-items {
@@ -39,8 +36,23 @@
   margin-right: 20px;
   margin-left: 10px;
 }
-a.sitename, a:visited.sitename {
-  color: #ff4d4d;
+a:hover.sitename {
+  color:#e40046;
+}
+.selectedIndex {
+  color:#e40046 !important;
+}
+.selectedContact {
+  color:#00b398 !important;
+}
+.selectedAbout {
+  color:#307fe2 !important;
+}
+a:hover.contact {
+  color:#00b398;
+}
+a:hover.about{
+  color:#307fe2;
 }
 .menu-items li {
   display: inline-block;
@@ -57,6 +69,9 @@ a.sitename, a:visited.sitename {
   background-repeat: no-repeat;
   background-position: center left;
   color: #dde1e2;
+}
+ul {
+  list-style: none;
 }
 
 @media only screen and (max-width: 800px) {
@@ -106,23 +121,28 @@ a.sitename, a:visited.sitename {
 }
 
 .footer {
-  height: 245px;
+  height: 300px;
   background-color: #000000;
   clear:both;
 }
 .logos {
-  display: inline-block;
   position: relative;
   top: 40px;
   left: 46%;
+}
+.logos2 {
+  position:relative;
+  left:44%;
+  margin-top:60px;
 }
 .linkedinLogo {
   width: 50px;
 }
 .copyright {
   position: relative;
-  top: 63%;
   left:44%;
+  top:8%;
+  color:#ffffff;
 }
 .projectRow {
   width:100%;
@@ -180,4 +200,22 @@ ul.slick-dots {
   background-color: transparent;
   background-image: url(blank.gif);
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+}
+.contactInfo {
+  text-align: center;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -300px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 300px; /* .push must be the same height as .footer */
+}
+.aboutMe {
+  text-align: center;
 }
