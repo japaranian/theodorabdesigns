@@ -121,18 +121,18 @@ ul {
 }
 
 .footer {
-  height: 300px;
+  height: 315px;
   background-color: #000000;
   clear:both;
 }
 .logos {
   position: relative;
   top: 40px;
-  left: 46%;
+  left: 47%;
 }
 .logos2 {
   position:relative;
-  left:44%;
+  left:45%;
   margin-top:60px;
 }
 .linkedinLogo {
@@ -140,18 +140,19 @@ ul {
 }
 .copyright {
   position: relative;
-  left:44%;
-  top:8%;
+  top:4%;
   color:#ffffff;
+  text-align: center;
 }
 .projectRow {
-  width:100%;
+  width: 100%;
   clear:both;
 }
 .projectDescription {
-  float:left;
-  width:16%;
-  margin-left:15px;
+  float: left;
+  width: 16%;
+  margin-left: 15px;
+  margin-top: 45px;
 }
 .projectSlider {
   position: relative;
@@ -160,8 +161,8 @@ ul {
   float: right;
 }
 .projectSlider img {
-  height:220px;
-  margin-right:2px;
+  height: 220px;
+  margin-right: 2px;
 }
 ul.slick-dots {
   display: none !important;
@@ -211,11 +212,45 @@ html, body {
   min-height: 100%;
   height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
   height: 100%;
-  margin: 0 auto -300px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -315px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-  height: 300px; /* .push must be the same height as .footer */
+  height: 315px; /* .push must be the same height as .footer */
 }
 .aboutMe {
   text-align: center;
+}
+.aboutMe {
+  position: relative;
+  margin-bottom: 25px;
+}
+.aboutMe img {
+  margin-bottom: 25px;
+  float: left;
+  margin-right: 25px;
+}
+.intro {
+  width: 846px;
+  position: relative;
+  left: 17%;
+  text-align: center;
+}
+.aboutMeDescription {
+  display: inline-block;
+  position: relative;
+  left: 17%;
+}
+.description h1 {
+  margin-bottom: 10px;
+}
+.brief {
+  width: 63%;
+  text-align: left;
+  margin-top: 35px;
+}
+.mainDescription {
+  width: 69%;
+  position: relative;
+  left: 17%;
+  text-align: left;
 }
