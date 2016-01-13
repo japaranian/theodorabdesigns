@@ -121,19 +121,19 @@ ul {
 }
 
 .footer {
-  height: 315px;
+  height: 330px;
   background-color: #000000;
   clear:both;
 }
 .logos {
   position: relative;
   top: 40px;
-  left: 47%;
+  text-align: center;
 }
 .logos2 {
   position:relative;
-  left:45%;
   margin-top:60px;
+  text-align: center;
 }
 .linkedinLogo {
   width: 50px;
@@ -212,10 +212,10 @@ html, body {
   min-height: 100%;
   height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
   height: 100%;
-  margin: 0 auto -315px; /* the bottom margin is the negative value of the footer's height */
+  margin: 0 auto -330px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-  height: 315px; /* .push must be the same height as .footer */
+  height: 330px; /* .push must be the same height as .footer */
 }
 .aboutMe {
   text-align: center;
@@ -251,4 +251,14 @@ html, body {
   position: relative;
   left: 17%;
   text-align: left;
+}
+.creator {
+  color: #ffffff;
+}
+.madeBy {
+  position: relative;
+  top:4%;
+  color:#ffffff;
+  text-align: center;
+  font-size: 0.85em;
 }
