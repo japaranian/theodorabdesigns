@@ -89,7 +89,7 @@ ul {
     display: none; 
     width: 100%;
     margin-top: 50px;
-    background-color: #008378;
+    background-color: #000000;
   }
   .menu-items li {
     display: block;
@@ -120,8 +120,38 @@ ul {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .projectSlider {
+    clear: both;
+    right: 12% !important;
+  }
+  .projectDescription {
+    text-align: center;
+    width: 100% !important;
+    margin-bottom: 25px;
+  }
+  .show {
+    margin-right: 20px;
+  }
+  .sitename.selectedIndex {
+    margin-left: 20px;
+  }
+  .description {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .lastProject {
+    margin-bottom: 60px !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .description {
+    width: 51%;
+    margin-left: 24%;
+  }
+}
+
 .footer {
-  height: 330px;
   background-color: #000000;
   clear:both;
 }
