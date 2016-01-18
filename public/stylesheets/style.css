@@ -74,6 +74,12 @@ ul {
   list-style: none;
 }
 
+@media only screen and (min-width: 801px) {
+  .projectDescription {
+    margin-left: 15px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .menu { 
     position: relative;
@@ -204,7 +210,6 @@ ul {
 .projectDescription {
   float: left;
   width: 16%;
-  margin-left: 15px;
   margin-top: 45px;
 }
 .projectSlider {
