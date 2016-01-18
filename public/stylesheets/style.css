@@ -77,7 +77,6 @@ ul {
 @media only screen and (max-width: 800px) {
   .menu { 
     position: relative;
-    width: 100%;
   }
   .sitename {
     position: absolute;
@@ -120,6 +119,36 @@ ul {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .aboutMe img {
+    margin-right: 0 !important;
+  }
+  .sitename.selectedIndex {
+    font-weight: 900;
+  }
+  h1 {
+    font-size: 31px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .aboutMeDescription {
+    left: 0 !important;
+  }
+  .aboutMe img {
+    float: none !important;
+  }
+  .brief {
+    position: relative;
+    left: 17%;
+  }
+  .contactInfo {
+    margin-bottom: 25px;
+  }
+  h1 {
+    font-size: 33px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .projectSlider {
     clear: both;
@@ -129,12 +158,6 @@ ul {
     text-align: center;
     width: 100% !important;
     margin-bottom: 25px;
-  }
-  .show {
-    margin-right: 20px;
-  }
-  .sitename.selectedIndex {
-    margin-left: 20px;
   }
   .description {
     width: 80%;
