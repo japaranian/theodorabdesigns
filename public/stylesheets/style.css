@@ -15,8 +15,8 @@
   margin-top: 20px;
 }
 
-/* Example responsive navigation menu  */
-.fixed-nav-bar li, .fixed-nav-bar a { 
+/* navigation menu  */
+.fixed-nav-bar a { 
   height: 50px;
   line-height: 50px;
 }
@@ -28,13 +28,8 @@
 .menu a, .menu a:hover, .menu a:target {
   color: #ebebeb;
 }
-.menu-items {
-  display: inline-block;
-}
 .sitename {
   display: inline-block;
-  margin-right: 20px;
-  margin-left: 10px;
 }
 a:hover.sitename {
   color:#e40046;
@@ -54,74 +49,29 @@ a:hover.contact {
 a:hover.about{
   color:#307fe2;
 }
-.menu-items li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.menu-items a {
-  text-decoration: none;
-}
-.show, .hide {
-  display: none;
-  padding-left: 15px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center left;
-  color: #dde1e2;
-}
 ul {
   list-style: none;
+}
+.sitename.selectedIndex {
+  font-weight: 900;
+}
+.menu-items {
+  display: inline-block;
+  margin-left: 3%;
 }
 
 @media only screen and (min-width: 801px) {
   .projectDescription {
     margin-left: 15px;
   }
+
 }
 
 @media only screen and (max-width: 800px) {
-  .menu { 
-    position: relative;
-  }
   .sitename {
     position: absolute;
     top: 0;
-    left: 15px;
     margin-left: 0px;
-  }
-  .menu-items {
-    display: none; 
-    width: 100%;
-    margin-top: 50px;
-    background-color: #000000;
-  }
-  .menu-items li {
-    display: block;
-    text-align: center;
-  }
-  .show, .hide {  
-    position: absolute;
-    top: 0;
-    right: 15px;
-  }
-  .show {
-    display: inline-block;
-  }
-  .hide {
-    display: none;
-  }
-  #menu:target .show {
-    display: none;
-  }
-  #menu:target .hide, #menu:target .menu-items {
-    display: inline-block;
-  }
-}
-
-@media only screen and (max-width: 220px) {
-  .sitename, .show, .hide {
-    font-size: 14px;
   }
 }
 
@@ -129,11 +79,17 @@ ul {
   .aboutMe img {
     margin-right: 0 !important;
   }
-  .sitename.selectedIndex {
-    font-weight: 900;
-  }
   h1 {
     font-size: 31px !important;
+  }
+  .menu a {
+    margin-right: 0;
+  }
+  .sitename{
+    margin-left: 7% !important;
+  }
+  .about {
+    margin-left: 40% !important;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -145,13 +101,31 @@ ul {
   }
   .brief {
     position: relative;
-    left: 17%;
+    left: 10%;
   }
   .contactInfo {
     margin-bottom: 25px;
   }
   h1 {
     font-size: 33px;
+  }
+  .menu {
+/*    text-align: center;
+*/  }
+  .mainDescription {
+    width: 80% !important;
+    position: relative !important;
+    left: 10% !important;
+    text-align: justify !important;
+  }
+  .sitename {
+    margin-left: 9%;
+  }
+  a.about {
+    margin-left: 42%;
+  }
+  a.contact {
+    margin-left: 18%;
   }
 }
 
@@ -177,6 +151,19 @@ ul {
   .description {
     width: 51%;
     margin-left: 24%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about {
+    margin-left: 4% !important;
+  }
+  .brief {
+    width: 93% !important;
+    margin-top: 0px !important;
+  }
+  .mainDescription {
+    width: 86% !important;
+    left: 7% !important;
   }
 }
 
@@ -293,21 +280,21 @@ html, body {
 }
 .aboutMeDescription {
   display: inline-block;
-  position: relative;
   left: 17%;
+  position: relative;
 }
 .description h1 {
   margin-bottom: 10px;
 }
 .brief {
-  width: 63%;
+  width: 63% !important;
   text-align: left;
-  margin-top: 35px;
+  margin-top: 35px !important;
 }
 .mainDescription {
-  width: 69%;
+  width: 69% !important;
   position: relative;
-  left: 17%;
+  left: 17% !important;
   text-align: left;
 }
 .creator {
