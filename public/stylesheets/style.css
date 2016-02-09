@@ -96,12 +96,18 @@ ul {
   .aboutMeDescription {
     left: 0 !important;
   }
+  .aboutMeDescription img {
+    margin-right: 0 !important;
+  }
   .aboutMe img {
     float: none !important;
   }
   .brief {
+    width: 69% !important;
     position: relative;
-    left: 10%;
+    left: 17%;
+    text-align: justify !important;
+    margin-bottom: 20px;
   }
   .contactInfo {
     margin-bottom: 25px;
@@ -113,9 +119,9 @@ ul {
 /*    text-align: center;
 */  }
   .mainDescription {
-    width: 80% !important;
+    width: 69% !important;
     position: relative !important;
-    left: 10% !important;
+    left: 17% !important;
     text-align: justify !important;
   }
   .sitename {
@@ -154,16 +160,34 @@ ul {
   }
 }
 @media only screen and (min-width: 768px) {
-  .about {
-    margin-left: 4% !important;
+  .aboutMeDescription {
+    display: inline-block;
+    margin-left: 7%;
   }
   .brief {
-    width: 93% !important;
-    margin-top: 0px !important;
+    width: 63%;
+    margin-top: 35px;
+    text-align: left;
   }
   .mainDescription {
-    width: 86% !important;
-    left: 7% !important;
+    width:86%;
+    margin-left: 7%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .brief {
+    text-align: justify;
+    margin-top: 0 !important;
+    width: 93%;
+  }
+}
+  .about {
+    margin-left: 7%;
+  }
+  .mainDescription {
+    position: relative;
+/*    left: 7% !important;
+*/    text-align: justify;
   }
 }
 
@@ -278,24 +302,8 @@ html, body {
   position: relative;
   text-align: center;
 }
-.aboutMeDescription {
-  display: inline-block;
-  left: 17%;
-  position: relative;
-}
 .description h1 {
   margin-bottom: 10px;
-}
-.brief {
-  width: 63% !important;
-  text-align: left;
-  margin-top: 35px !important;
-}
-.mainDescription {
-  width: 69% !important;
-  position: relative;
-  left: 17% !important;
-  text-align: left;
 }
 .creator {
   color: #ffffff;
