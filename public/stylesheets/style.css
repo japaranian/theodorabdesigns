@@ -325,3 +325,16 @@ html, body {
 span.lb-number {
   display: none !important;
 }
+.feedback-header {
+  text-align: center;
+  margin: 40px;
+}
+.feedback-form {
+  text-align: center;
+}
+input {
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px black;
+}
