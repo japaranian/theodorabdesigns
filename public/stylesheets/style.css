@@ -325,3 +325,10 @@ html, body {
 span.lb-number {
   display: none !important;
 }
+.canstruction {
+  text-align: center;
+}
+.link {
+  color: blue;
+  
+}
