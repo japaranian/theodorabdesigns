@@ -433,20 +433,20 @@ span.lb-number {
 
 @-webkit-keyframes progress-bar {
     from { width: 0%; }
-    to { width: 20%; }
+    to { width: 30%; }
 }
 
 @-moz-keyframes progress-bar {
     from { width: 0%; }
-    to { width: 20%; }
+    to { width: 30%; }
 }
 
 @-o-keyframes progress-bar {
     from { width: 0%; }
-    to { width: 20%; }
+    to { width: 30%; }
 }
 
 @keyframes progress-bar {
     from { width: 0%; }
-    to { width: 26%; }
+    to { width: 30%; }
 }
