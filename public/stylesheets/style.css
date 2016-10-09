@@ -43,11 +43,17 @@ a:hover.sitename {
 .selectedAbout {
   color:#307fe2 !important;
 }
+.selectedEvents {
+  color: #d22630 !important;
+}
 a:hover.contact {
   color:#00b398;
 }
 a:hover.about{
   color:#307fe2;
+}
+a:hover.events {
+  color: #d22630;
 }
 ul {
   list-style: none;
@@ -123,13 +129,16 @@ ul {
     text-align: justify !important;
   }
   .sitename {
-    margin-left: 10%;
+    margin-left: 3%;
   }
   a.about {
-    margin-left: 40%;
+    margin-left: 23%;
   }
   a.contact {
-    margin-left: 21%;
+    margin-left: 10%;
+  }
+  a.events {
+    margin-left: 10%;
   }
 }
 
@@ -449,4 +458,44 @@ span.lb-number {
 @keyframes progress-bar {
     from { width: 0%; }
     to { width: 40%; }
+}
+
+.canstructionImages {
+  text-align: center;
+}
+.canstructionImages img{
+  height: 250px;
+}
+.eventsIntro {
+  width: 75%;
+  margin-left: 13%;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.sponsors {
+  width: 75%;
+  margin-left: 14%;
+  text-align: center;
+}
+.sponsors img {
+  margin: 20px 10px;
+}
+.eventTitle {
+  margin-left: 13%;
+  margin-bottom: 13px;
+}
+@media only screen and (max-width: 376px) {
+  .canstructionImages {
+    width: 333px;
+    margin-left: 15px;
+  }
+  .canstructionImages img{
+    height: 175px;
+  }
+  .raymondsLogo {
+    width: 260px;
+  }
+  .eventsIntro {
+    width: 272px;
+  }
 }

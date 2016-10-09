@@ -16,3 +16,7 @@ end
 get ('/about') do
 	erb :about
 end
+
+get	('/events') do
+	erb :events
+end
