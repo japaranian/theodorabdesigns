@@ -28,9 +28,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* LAYOUT */
-.fixed-nav-bar {
-  box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.6);
-}
 .content {
   position: relative;
 }
