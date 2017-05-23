@@ -382,6 +382,24 @@ span.lb-number {
   margin-left: 13%;
   margin-bottom: 13px;
 }
+.workingWithArchitect, .eightScaryThings {
+  margin-left: 13%;
+  margin-bottom: 30px;
+}
+.accordionContainer {
+  max-width: 900px;
+}
+.accordionTitle {
+  background-color: #A29890;
+  padding: 1em;
+  color: #fff;
+  display: block;
+  border-bottom: 1px solid #6a6058;
+}
+.accordionTitle:before {
+  content: "+";
+  margin-right: 20px;
+}
 @media only screen and (max-width: 376px) {
   .canstructionImages {
     width: 333px;
