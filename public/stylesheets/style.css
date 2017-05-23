@@ -40,16 +40,17 @@ a:hover.sitename {
 .selectedContact {
   color:#00b398 !important;
 }
-.selectedAbout {
+.selectedAbout, .selectedFaq {
   color:#307fe2 !important;
 }
 .selectedEvents {
   color: #d22630 !important;
 }
+
 a:hover.contact {
   color:#00b398;
 }
-a:hover.about{
+a:hover.about, a:hover.faq{
   color:#307fe2;
 }
 a:hover.events {

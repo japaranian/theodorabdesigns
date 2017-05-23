@@ -6,36 +6,21 @@ configure do
 end
 
 get ('/') do
-	erb :index, 
-	:layout => :layout do
-		erb :layout
-	end
+	erb :index
 end
 
 get ('/contact') do
-	erb :contact,
-	:layout => :layout do
-		erb :layout
-	end
+	erb :contact
 end
 
 get ('/about') do
-	erb :about,
-	:layout => :layout do
-		erb :layout
-	end
+	erb :about
 end
 
 get	('/events') do
-	erb :events,
-	:layout => :layout do
-		erb :layout
-	end
+	erb :events
 end
 
 get	('/faq') do
-	erb :faq,
-	:layout => :layout do
-		erb :layout
-	end
+	erb :faq
 end
