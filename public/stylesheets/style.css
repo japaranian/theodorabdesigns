@@ -1,37 +1,17 @@
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
+.nav {
   background-color: #A29890;
+  padding: 10px;
 }
-
+.nav-link {
+  color: #fff;
+}
 /* The element at the top of the page right after the fixed navigation bar
    MUST have sufficient top margin or else it will be covered by the bar */
 .content {
   margin-top: 20px;
 }
 
-/* navigation menu  */
-.fixed-nav-bar a { 
-  height: 50px;
-  line-height: 50px;
-}
-.menu {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-}
-.menu a, .menu a:hover, .menu a:target {
-  color: #ebebeb;
-}
-.sitename {
-  display: inline-block;
-}
-a:hover.sitename {
+a:hover.index {
   color:#e40046;
 }
 .selectedIndex {
@@ -59,26 +39,10 @@ a:hover.events {
 ul {
   list-style: none;
 }
-.sitename.selectedIndex {
-  font-weight: 900;
-}
-.menu-items {
-  display: inline-block;
-  margin-left: 3%;
-}
 
 @media only screen and (min-width: 801px) {
   .projectDescription {
     margin-left: 15px;
-  }
-
-}
-
-@media only screen and (max-width: 800px) {
-  .sitename {
-    position: absolute;
-    top: 0;
-    margin-left: 0px;
   }
 }
 
@@ -88,15 +52,6 @@ ul {
   }
   h1 {
     font-size: 31px !important;
-  }
-  .menu a {
-    margin-right: 0;
-  }
-  .sitename{
-    margin-left: 7% !important;
-  }
-  .about {
-    margin-left: 26% !important;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -121,25 +76,10 @@ ul {
   h1 {
     font-size: 33px;
   }
-  .menu {
-/*    text-align: center;
-*/  }
   .mainDescription {
     width: 87% !important;
     position: relative !important;
     text-align: justify !important;
-  }
-  .sitename {
-    margin-left: 3%;
-  }
-  a.about {
-    margin-left: 23%;
-  }
-  a.contact {
-    margin-left: 9%;
-  }
-  a.events {
-    margin-left: 10%;
   }
 }
 
@@ -183,9 +123,6 @@ ul {
     margin-left: 17%;
     text-align: left;
   }
-  .about {
-    margin-left: 4% !important;
-  }
 }
 @media only screen and (max-width: 768px) {
   .brief {
@@ -199,9 +136,6 @@ ul {
     clear:both;
     width: 87%;
     left: 7%;
-  }
-  .about {
-    margin-left: 7%;
   }
   .aboutMeDescription {
     margin-left: 7%;
@@ -383,7 +317,6 @@ span.lb-number {
   margin-bottom: 13px;
 }
 .workingWithArchitect {
-  margin-left: 13%;
   margin-bottom: 60px;
 }
 .workingWithArchitect h3 {
@@ -462,8 +395,8 @@ span.lb-number {
   padding-top: 16px;
   padding-right: 30px;
   padding-bottom: 16px;
-  width: 852px;
-  color: #fff;
+/*  width: 852px;
+*/  color: #fff;
 }
 .faq-question.gray1.selected{
   background: #A29890;
@@ -480,8 +413,8 @@ span.lb-number {
   border-right: 2px solid #A29890;
   border-left: 2px solid #A29890;*/
   padding: 13px 25px;
-  width: 882px;
-  background-color: #e2dfdc;
+/*  width: 882px;
+*/  background-color: #e2dfdc;
 }
 .gray1 {
   background-color: #A29890;
