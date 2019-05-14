@@ -336,6 +336,10 @@ span.lb-number {
   color: #fff;
 }
 
+.sponsors.habitatForHumanity img {
+  margin: 0 80px 75px 80px;
+}
+
 @media only screen and (max-width: 376px) {
   .canstructionImages {
     width: 333px;
@@ -373,6 +377,12 @@ span.lb-number {
   .social-media {
   display: inline-flex;
   margin-left:30% !important;
+  }
+  .sponsors.habitatForHumanity img {
+    margin: 10% auto;
+  }
+  .habitat-header {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 320px) {
