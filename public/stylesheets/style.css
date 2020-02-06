@@ -143,11 +143,7 @@ ul {
   .aboutMeDescription {
     margin-left: 7%;
   }
-  .social-media {
-    margin-left: 39% !important;
-  }
   .footer-logo{
-    margin-left: 43% !important;
     margin-top: 20px;
   }
 }
@@ -180,6 +176,7 @@ ul {
   position: relative;
   color:#ffffff;
   text-align: center;
+  padding: 8px;
 }
 .projectRow {
   width: 100%;
@@ -251,7 +248,8 @@ html, body {
   margin: 0 auto -260px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-  height: 260px; /* .push must be the same height as .footer */
+  height: 325px; /* .push must be the same height as .footer */
+  text-align: center;
 }
 .aboutMe {
   text-align: center;
@@ -354,29 +352,20 @@ span.lb-number {
   .eventsIntro {
     width: 272px;
   }
-  .social-media {
-    margin-left:28% !important;
-  }
 }
 .social-media {
   display: inline-flex;
-  position: relative;
-  margin-left:43.5%;
+}
+
+.social-media img {
+  text-align: center;
 }
 .footer-logo {
-  margin-left:46%;
   margin-top:20px;
 }
 @media only screen and (max-width: 414px) {
-  p.copyright.footer-contact {
-    display: none;
-  }
-  .footer-logo {
-    margin-left: 36% !important;
-  }
-  .social-media {
+.social-media {
   display: inline-flex;
-  margin-left:30% !important;
   }
   .sponsors.habitatForHumanity img {
     margin: 10% auto;
@@ -387,7 +376,7 @@ span.lb-number {
 }
 @media only screen and (max-width: 320px) {
   .social-media {
-    margin-left: 25% !important;
+    margin-left: 8% !important;
   }
 }
 
