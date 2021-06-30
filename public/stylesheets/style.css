@@ -248,7 +248,7 @@ html, body {
   margin: 0 auto -260px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-  height: 325px; /* .push must be the same height as .footer */
+  height: 415px; /* .push must be the same height as .footer */
   text-align: center;
 }
 .aboutMe {
@@ -423,4 +423,23 @@ span.lb-number {
 }
 .gray2 {
   background-color: #c5bfba;
+}
+/*Build Zoom Logo CSS */
+.buildZoom-logo {
+  width:  100%;
+  margin:  auto;
+}
+.bz-bdg>a{
+  display: block;
+  font-family: Helvetica;
+  font-size: 9px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 4px;
+  color: #484848;
+  line-height: 10px;
+}
+.bz-bdg .small-label {
+  margin-top:-12px;
+  padding: 0 10px;
 }
