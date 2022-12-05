@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'bundler/setup'
 
 configure do
 	enable :sessions
