@@ -25,3 +25,11 @@ end
 get	('/faq') do
 	erb :faq
 end
+
+get ('/residential') do
+  erb :residential
+end
+
+get ('/commercial') do
+  erb :commercial
+end

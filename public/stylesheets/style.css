@@ -181,6 +181,7 @@ ul {
 .projectRow {
   width: 100%;
   clear:both;
+  margin-top:50px;
 }
 .projectDescription {
   float: left;
@@ -245,10 +246,10 @@ html, body {
   min-height: 100%;
   height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
   height: 100%;
-  margin: 0 auto -260px; /* the bottom margin is the negative value of the footer's height */
+  margin: 100px auto -260px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-  height: 415px; /* .push must be the same height as .footer */
+  height: 250px; /* .push must be the same height as .footer */
   text-align: center;
 }
 .aboutMe {
@@ -442,4 +443,7 @@ span.lb-number {
 .bz-bdg .small-label {
   margin-top:-12px;
   padding: 0 10px;
+}
+.social-media {
+  margin-top: 30px;
 }
