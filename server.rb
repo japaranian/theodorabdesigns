@@ -2,8 +2,9 @@ require 'sinatra'
 require 'bundler/setup'
 
 configure do
+  # puts "ENV session_secret length: #{ENV['session_secret']&.bytesize}"
 	enable :sessions
-	set :session_secret, 'secret'
+	set :session_secret, ENV.fetch("session_secret")
 end
 
 get ('/') do
