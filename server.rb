@@ -1,6 +1,9 @@
 require 'sinatra'
 require 'bundler/setup'
 
+set :port, ENV['PORT'] || 4567
+set :bind, '0.0.0.0'
+
 configure do
   # puts "ENV session_secret length: #{ENV['session_secret']&.bytesize}"
 	enable :sessions
