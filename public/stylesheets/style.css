@@ -447,3 +447,16 @@ span.lb-number {
 .social-media {
   margin-top: 30px;
 }
+
+.main {
+  background: url('https://res.cloudinary.com/hptiz0can/image/upload/v1636253451/images/logos/tbd_bfzbtj.png');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  opacity: 0.5;
+  height: 500px;
+  margin-left: 35%;
+}
+
+.container {
+  margin: 100px auto;
+}
