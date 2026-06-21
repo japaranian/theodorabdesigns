@@ -34,3 +34,7 @@ end
 get ('/commercial') do
   erb :commercial
 end
+
+get ('/interior') do
+  erb :interior
+end
