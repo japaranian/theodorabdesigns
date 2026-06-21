@@ -249,7 +249,7 @@ html, body {
   margin: 100px auto -260px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-  height: 250px; /* .push must be the same height as .footer */
+  height: 260px; /* .push must be the same height as .footer */
   text-align: center;
 }
 .aboutMe {

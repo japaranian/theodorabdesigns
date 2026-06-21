@@ -38,3 +38,7 @@ end
 get ('/interior') do
   erb :interior
 end
+
+get ('/about-tbd') do
+  erb :abouttbd
+end
