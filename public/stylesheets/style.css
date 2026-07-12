@@ -42,6 +42,9 @@ a:hover.events {
 ul {
   list-style: none;
 }
+#about {
+  scroll-margin-top: 90px;
+}
 
 @media only screen and (min-width: 801px) {
   .projectDescription {
@@ -241,15 +244,15 @@ ul.slick-dots {
 }
 html, body {
   height: 100%;
+  margin: 0;
 }
-.wrapper {
-  min-height: 100%;
-  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-  height: 100%;
-  margin: 100px auto -260px; /* the bottom margin is the negative value of the footer's height */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.footer, .push {
-  height: 157px; /* .push must be the same height as .footer */
+.footer {
+  margin-top: auto;
   text-align: center;
 }
 .aboutMe {
