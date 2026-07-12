@@ -1,5 +1,5 @@
 .nav {
-  background-color: #A29890;
+  background-color: rgb(212, 226, 226);
   padding: 10px;
 }
 .nav-link {
@@ -249,7 +249,7 @@ html, body {
   margin: 100px auto -260px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-  height: 260px; /* .push must be the same height as .footer */
+  height: 157px; /* .push must be the same height as .footer */
   text-align: center;
 }
 .aboutMe {
