@@ -1,0 +1,23 @@
+<% current_path = request.path_info %>
+<nav class="nav justify-content-center flex-sm-row fixed-top">
+  <a class="nav-link index<%= ' selectedIndex' if current_path == '/' %>" href="/">tbd</a>
+  <a class="nav-link about<%= ' selectedAbout' if current_path == '#about' %>" href="#about">about</a>
+  <a class="nav-link contact<%= ' selectedContact' if current_path == '#contact' %>" href="#contact">contact</a>
+  <a class="nav-link faq<%= ' selectedFaq' if current_path == '/faq' %>" href="/faq">faq</a>
+</nav>
+
+<script>
+  function updateActiveHashLink() {
+    document.querySelector('.nav-link.about').classList.remove('selectedAbout');
+    document.querySelector('.nav-link.contact').classList.remove('selectedContact');
+
+    if (window.location.hash === '#about') {
+      document.querySelector('.nav-link.about').classList.add('selectedAbout');
+    } else if (window.location.hash === '#contact') {
+      document.querySelector('.nav-link.contact').classList.add('selectedContact');
+    }
+  }
+
+  window.addEventListener('hashchange', updateActiveHashLink);
+  window.addEventListener('DOMContentLoaded', updateActiveHashLink);
+</script>
