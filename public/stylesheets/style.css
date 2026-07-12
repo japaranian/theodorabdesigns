@@ -463,3 +463,18 @@ span.lb-number {
 .container {
   margin: 100px auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .about-logo {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services-columns {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+}
