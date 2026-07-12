@@ -21,195 +21,30 @@
   </head>
   <body>
     <%= erb :_nav %>
-    <section class="content wrapper">
-      <div class="projectRow">
-        <div class="projectDescription">
-          <h2 class="project-category">Restaurant Renovation</h2>
-          <p><strong>Location:</strong><br>Ava's Kitchen & Bar</p>
-          <p>Kenilworth, NJ</p>
-        </div>
-        <div class="projectSlider">
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253265/images/ava_bar_kitchen/ava_01_wm2ku3.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253265/images/ava_bar_kitchen/ava_01_wm2ku3.jpg">
-            </a>
+      <section class="content wrapper">
+        <% projects.each do |project| %>
+          <div class="projectRow">
+            <div class="projectDescription">
+              <h2 class="project-category"><%= project[:category] %></h2>
+              <% if project[:name] %>
+                <p><strong>Location:</strong><br><%= project[:name] %></p>
+                <p><%= project[:location] %></p>
+              <% else %>
+                <p><strong>Location:</strong><br><%= project[:location] %></p>
+              <% end %>
+            </div>
+            <div class="projectSlider">
+              <% project[:images].each do |img_url| %>
+                <div>
+                  <a href="<%= img_url %>" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="<%= project[:gallery] %>">
+                    <img src="<%= img_url %>">
+                  </a>
+                </div>
+              <% end %>
+            </div>
           </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253265/images/ava_bar_kitchen/ava_02_hleuaw.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253265/images/ava_bar_kitchen/ava_02_hleuaw.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253269/images/ava_bar_kitchen/ava_31_sggkux.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253269/images/ava_bar_kitchen/ava_31_sggkux.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253269/images/ava_bar_kitchen/ava_30_sr2uyn.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253269/images/ava_bar_kitchen/ava_30_sr2uyn.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253269/images/ava_bar_kitchen/ava_33_hld2c1.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253269/images/ava_bar_kitchen/ava_33_hld2c1.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253267/images/ava_bar_kitchen/ava_16_o8ty5a.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253267/images/ava_bar_kitchen/ava_16_o8ty5a.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253268/images/ava_bar_kitchen/ava_25_qcyhrd.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253268/images/ava_bar_kitchen/ava_25_qcyhrd.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253268/images/ava_bar_kitchen/ava_24_tn0jxi.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253268/images/ava_bar_kitchen/ava_24_tn0jxi.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253267/images/ava_bar_kitchen/ava_23_caqpkq.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253267/images/ava_bar_kitchen/ava_23_caqpkq.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253266/images/ava_bar_kitchen/ava_11_kw5nla.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253266/images/ava_bar_kitchen/ava_11_kw5nla.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253265/images/ava_bar_kitchen/ava_05_coh4ph.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253265/images/ava_bar_kitchen/ava_05_coh4ph.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253265/images/ava_bar_kitchen/ava_04_r9eswv.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253265/images/ava_bar_kitchen/ava_04_r9eswv.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1636253267/images/ava_bar_kitchen/ava_22_elxzul.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1636253267/images/ava_bar_kitchen/ava_22_elxzul.jpg">
-            </a>
-          </div>
-        </div>
-      </div>
-            <div class="projectRow">
-        <div class="projectDescription">
-          <h2 class="project-category">Church Renovation</h2>
-          <p><strong>Location:</strong><br>St. George Community Center</p>
-          <p>Piscataway, NJ</p>
-        </div>
-        <div class="projectSlider">
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1782080476/images/st-george-commercial/_A240901_kdltox.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1782080476/images/st-george-commercial/_A240901_kdltox.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1782080471/images/st-george-commercial/_A240873_dj6bgg.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1782080471/images/st-george-commercial/_A240873_dj6bgg.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1782080472/images/st-george-commercial/_A240879_ayj01x.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1782080472/images/st-george-commercial/_A240879_ayj01x.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1782080474/images/st-george-commercial/_A240897_ymwam2.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1782080474/images/st-george-commercial/_A240897_ymwam2.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1782080480/images/st-george-commercial/DJI_20251024110742_0636_D_i7pq9e.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1782080480/images/st-george-commercial/DJI_20251024110742_0636_D_i7pq9e.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1782080481/images/st-george-commercial/DJI_20251024111501_0672_D_nblei2.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1782080481/images/st-george-commercial/DJI_20251024111501_0672_D_nblei2.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1782080485/images/st-george-commercial/DJI_20251024111705_0675_D_sx9rcx.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1782080485/images/st-george-commercial/DJI_20251024111705_0675_D_sx9rcx.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1782080473/images/st-george-commercial/_A240893_vaubqt.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1782080473/images/st-george-commercial/_A240893_vaubqt.jpg">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="projectRow">
-        <div class="projectDescription">
-          <h2 class="project-category">Church Renovation</h2>
-          <p><strong>Location:</strong><br>First Baptist Church</p>
-          <p>South Orange, NJ</p>
-        </div>
-        <div class="projectSlider">
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548644/images/first_baptist_church/IMG_8317_qpvzr7.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548644/images/first_baptist_church/IMG_8317_qpvzr7.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548646/images/first_baptist_church/IMG_8321_reivyr.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548646/images/first_baptist_church/IMG_8321_reivyr.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548643/images/first_baptist_church/IMG_8323_gtgo8e.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548643/images/first_baptist_church/IMG_8323_gtgo8e.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548641/images/first_baptist_church/IMG_8332_uy79ku.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548641/images/first_baptist_church/IMG_8332_uy79ku.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548654/images/first_baptist_church/IMG_8339_mmlfuu.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548654/images/first_baptist_church/IMG_8339_mmlfuu.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548645/images/first_baptist_church/IMG_8354_z4hwbg.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548645/images/first_baptist_church/IMG_8354_z4hwbg.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548663/images/first_baptist_church/IMG_8369_agz0f1.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548663/images/first_baptist_church/IMG_8369_agz0f1.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548661/images/first_baptist_church/IMG_8382_uvlbba.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548661/images/first_baptist_church/IMG_8382_uvlbba.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548658/images/first_baptist_church/IMG_8397_ctjkwz.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548658/images/first_baptist_church/IMG_8397_ctjkwz.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548663/images/first_baptist_church/IMG_8412_ly4gkf.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548663/images/first_baptist_church/IMG_8412_ly4gkf.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1771548659/images/first_baptist_church/IMG_8463_tfraw5.jpg" data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1771548659/images/first_baptist_church/IMG_8463_tfraw5.jpg">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+        <% end %>
+      </section>
     <!-- serves the footer -->
     <%= erb :_footer %>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
