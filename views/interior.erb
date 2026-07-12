@@ -21,128 +21,30 @@
   </head>
   <body>
     <%= erb :_nav %>
-    <section class="content wrapper">
-      <div class="projectRow">
-        <div class="projectDescription">
-          <h2 class="project-category">New Construction</h2>
-          <p><strong>Location:</strong><br>Watchung, NJ</p>
-        </div>
-        <div class="projectSlider">
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212125/images/croffie-watchung/_A240990_k4s9on.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212125/images/croffie-watchung/_A240990_k4s9on.jpg">
-            </a>
+      <section class="content wrapper">
+        <% projects.each do |project| %>
+          <div class="projectRow">
+            <div class="projectDescription">
+              <h2 class="project-category"><%= project[:category] %></h2>
+              <% if project[:name] %>
+                <p><strong>Location:</strong><br><%= project[:name] %></p>
+                <p><%= project[:location] %></p>
+              <% else %>
+                <p><strong>Location:</strong><br><%= project[:location] %></p>
+              <% end %>
+            </div>
+            <div class="projectSlider">
+              <% project[:images].each do |img_url| %>
+                <div>
+                  <a href="<%= img_url %>" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="<%= project[:gallery] %>">
+                    <img src="<%= img_url %>">
+                  </a>
+                </div>
+              <% end %>
+            </div>
           </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212126/images/croffie-watchung/_B220116-Edit_nk1xyj.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212126/images/croffie-watchung/_B220116-Edit_nk1xyj.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212131/images/croffie-watchung/_B220117_l9bjpq.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212131/images/croffie-watchung/_B220117_l9bjpq.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212129/images/croffie-watchung/_B220121_kkpwuc.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212129/images/croffie-watchung/_B220121_kkpwuc.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212130/images/croffie-watchung/_B220137_rvytnt.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212130/images/croffie-watchung/_B220137_rvytnt.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212132/images/croffie-watchung/_B220164_kb91ah.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212132/images/croffie-watchung/_B220164_kb91ah.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212133/images/croffie-watchung/_B220167_ynjbtw.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212133/images/croffie-watchung/_B220167_ynjbtw.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212134/images/croffie-watchung/_B220221_we7wf8.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212134/images/croffie-watchung/_B220221_we7wf8.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212132/images/croffie-watchung/_B220229_kwyuby.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212132/images/croffie-watchung/_B220229_kwyuby.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212133/images/croffie-watchung/_B220238_sex9aq.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212133/images/croffie-watchung/_B220238_sex9aq.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212130/images/croffie-watchung/_B220296_pgmtue.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212130/images/croffie-watchung/_B220296_pgmtue.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212134/images/croffie-watchung/_B220321_et6htx.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212134/images/croffie-watchung/_B220321_et6htx.jpg">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="projectRow">
-        <div class="projectDescription">
-          <h2 class="project-category">Renovation</h2>
-          <p><strong>Location:</strong><br>Jersey City, NJ</p>
-        </div>
-        <div class="projectSlider">
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212782/images/soler-jersey-city/_3280565_u9zzwr.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212782/images/soler-jersey-city/_3280565_u9zzwr.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212783/images/soler-jersey-city/_3280580_akfezl.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212783/images/soler-jersey-city/_3280580_akfezl.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212784/images/soler-jersey-city/_3280586_rdul5x.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212784/images/soler-jersey-city/_3280586_rdul5x.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778212785/images/soler-jersey-city/_3280602_xp819i.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778212785/images/soler-jersey-city/_3280602_xp819i.jpg">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="projectRow">
-        <div class="projectDescription">
-          <h2 class="project-category">Church Renovation</h2>
-          <p><strong>Location:</strong><br>St. George Community Center</p>
-          <p>Piscataway, NJ</p>
-        </div>
-        <div class="projectSlider">
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778213230/images/st-george-community-center/DJI_20251024110728_0632_D-Edit_bpllhp.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778213230/images/st-george-community-center/DJI_20251024110728_0632_D-Edit_bpllhp.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778213230/images/st-george-community-center/DJI_20251024111345_0669_D_ddacsz.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778213230/images/st-george-community-center/DJI_20251024111345_0669_D_ddacsz.jpg">
-            </a>
-          </div>
-          <div>
-            <a href="https://res.cloudinary.com/hptiz0can/image/upload/v1778213228/images/st-george-community-center/DJI_20251024111501_0672_D_n6phzz.jpg" data-footer="Photo by <a href='http://www.alexanderboardman.com/' target='_blank'>Alexander Boardman</a>." data-toggle="lightbox" data-gallery="ava">
-              <img src="https://res.cloudinary.com/hptiz0can/image/upload/v1778213228/images/st-george-community-center/DJI_20251024111501_0672_D_n6phzz.jpg">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+        <% end %>
+      </section>
     <!-- serves the footer -->
     <%= erb :_footer %>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
